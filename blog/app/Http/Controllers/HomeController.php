@@ -25,4 +25,13 @@ class HomeController extends Controller
     {
         return view('home');
     }
+    /**
+     *
+     * 显示用户的信息
+     */
+    public function show($id)
+    {
+        $user = $this->user->find();
+    }
+
 }
